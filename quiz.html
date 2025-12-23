@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Are You a Cat Spy?</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            background-color: #fff7e6; /* Light yellow background */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding: 20px;
+            text-align: center;
+            font-family: 'Georgia', serif;
+            color: #333;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            background-color: #fff;
+            margin: 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            color: #0073e6;
+        }
+        .content-wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        section h2 {
+            font-size: 28px;
+            color: #222;
+            font-family: 'Georgia', serif;
+            margin-bottom: 10px;
+        }
+        form {
+            text-align: left;
+            margin: 20px auto;
+            max-width: 500px;
+            font-size: 18px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        form input, form select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form input[type="submit"] {
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        form input[type="submit"]:hover {
+            background-color: #005bb5;
+        }
+        img {
+            margin: 20px auto;
+            display: block;
+            border: 5px solid #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body class="quiz">
+
+    <header>
+        <h1>Are You a Cat Spy?</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="theories.html">Theories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <div class="content-wrapper">
+        <main>
+            <section>
+                <h2>Take the Quiz!</h2>
+                <p>Find out if you and your cat are part of the Catspiracy!</p>
+                <img src="img/quiz-cat.jpg" alt="A curious cat with a mischievous smile" width="300">
+                <form id="quizForm">
+                    <label for="catName">What is your cat's name?</label>
+                    <input type="text" id="catName" name="catName" required>
+                    
+                    <label>Does your cat often stare at you?</label>
+                    <input type="radio" id="stareYes" name="stare" value="yes" required> Yes<br>
+                    <input type="radio" id="stareNo" name="stare" value="no" required> No<br><br>
+                    
+                    <label>What’s your cat's favorite activity?</label>
+                    <select name="activity" id="activity">
+                        <option value="sleeping">Sleeping</option>
+                        <option value="knockingThings">Knocking Things Over</option>
+                        <option value="hiding">Hiding in Boxes</option>
+                        <option value="zoomies">3 AM Zoomies</option>
+                    </select>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>© 2024 Catspiracy Theories. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('quizForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thanks for taking the quiz! Your cat spy status is under review.');
+        });
+    </script>
+
+</body>
+</html>

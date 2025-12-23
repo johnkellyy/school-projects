@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            background-color: #f4e6ff; /* Light purple background */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            padding: 20px;
+            font-family: 'Georgia', serif;
+            color: #333;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            background-color: #fff;
+            margin: 0;
+            display: inline-block;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            color: #0073e6;
+        }
+        section h2 {
+            font-size: 28px;
+            color: #222;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            text-align: center;
+        }
+        .gallery-item {
+            display: inline-block; /* Place image and text side by side */
+            width: 45%; /* Adjust the width of each item */
+            vertical-align: top; /* Align text to the top of the image */
+            margin: 20px;
+        }
+        .gallery-item img {
+            width: 300px; /* Larger size for images */
+            height: auto;
+            border: 5px solid #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .gallery-item .caption {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #444;
+            text-align: left;
+        }
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 10px 0;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Gallery</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="theories.html">Theories</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Cat-tastic Images</h2>
+        <p>Explore our collection of the most adorable and mysterious cats!</p>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="img/gallery-cat1.jpg" alt="Cat lounging in a box" width="400">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery-cat2.jpg" alt="Cat peeking through blinds">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery-cat3.jpg" alt="Cat wearing sunglasses">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery-cat4.jpg" alt="Cat perched on a tree">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery-cat5.jpg" alt="Cat playing with a toy">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 Catspiracy Theories. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
