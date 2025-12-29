@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
         body {
-            background-color: #f7f4e9;
+            background-color: #f7f4e9; /* default color */
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
@@ -75,14 +75,25 @@
             margin-top: 20px;
             font-size: 14px;
         }
+        .color-picker {
+            margin-top: 15px;
+        }
     </style>
 </head>
+
 <body class="home">
 
     <header>
         <h1>Welcome to Catspiracy Theories</h1>
         <p>The purr-fect place to uncover feline secrets!</p>
+
+        <!-- Site Color Selection -->
+        <div class="color-picker">
+            <label for="colorPicker">Choose Site Color:</label>
+            <input type="color" id="colorPicker" value="#f7f4e9">
+        </div>
     </header>
+
     <nav>
         <ul>
             <li><a href="about.html">About</a></li>
@@ -90,24 +101,42 @@
             <li><a href="quiz.html">Quiz</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-
         </ul>
     </nav>
+
     <div class="content-wrapper">
         <main>
             <section>
                 <h2>Discover the Truth About Cats</h2>
-                <p>Cats are not just cute—they might be plotting something big! Join us to uncover the cutest conspiracies and learn about the secret lives of our feline friends.</p>
+                <p>
+                    Cats are not just cute—they might be plotting something big!
+                    Join us to uncover the cutest conspiracies and learn about the
+                    secret lives of our feline friends.
+                </p>
                 <img src="img/home-cat.jpg" alt="A mysterious cat staring at the camera" width="300">
             </section>
+
             <section>
-                <button onclick="alert('Get ready to dive into the mysteries of cats! Meow!')">Explore More</button>
+                <button onclick="alert('Get ready to dive into the mysteries of cats! Meow!')">
+                    Explore More
+                </button>
             </section>
         </main>
     </div>
+
     <footer>
         <p>© 2024 Catspiracy Theories. All rights reserved.</p>
     </footer>
 
+    <!-- JavaScript for Site Color Selection -->
+    <script>
+        const colorPicker = document.getElementById("colorPicker");
+
+        colorPicker.addEventListener("input", function () {
+            document.body.style.backgroundColor = this.value;
+        });
+    </script>
+
 </body>
 </html>
+
